@@ -71,4 +71,4 @@ merge_protections:
     if: []
     success_conditions:
       # must have 48+ characters on possibly multi-lines
-      - 'body ~= .{48,}'
+      - 'body ~= (?ms:.{48,})'
