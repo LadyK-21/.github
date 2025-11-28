@@ -2,6 +2,7 @@ defaults:
   actions:
     squash:
       commit_message: first-commit
+
 pull_request_rules:
   - name: dismiss reviews
     conditions: []
@@ -72,3 +73,6 @@ merge_protections:
     success_conditions:
       # must have 48+ characters on possibly multi-lines
       - 'body ~= (?ms:.{48,})'
+
+merge_protections_settings:
+  reporting_method: deployments
